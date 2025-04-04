@@ -23,10 +23,6 @@ const Home = () => {
             <Mylife />
 
             <Footer />
-
-            <div className="bg-softGreen text-white p-4">
-                This section uses your soft green background
-            </div>
         </div>
     );
 };
