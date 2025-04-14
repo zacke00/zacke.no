@@ -18,6 +18,7 @@ type SkillItem = {
     title: string;
     description: string;
     path: string;
+    external: boolean;
     thumbnail?: string; // optional image preview
 };
 

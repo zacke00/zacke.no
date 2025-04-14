@@ -23,6 +23,8 @@ import {
     DownloadIcon,
   } from "lucide-react"; // import only icons you need
 import {  Project, SkillCategory } from "../types";
+import TandanlagetImg from "../assets/Tandanlaget.png";
+import BerglundwebImg from "../assets/Berglundweb.png";
 
 const skills: SkillCategory[] = [
     {
@@ -81,17 +83,22 @@ const projects: Project[] = [
   {
       title: "Berglund Web",
       description: "Custom-built portfolio and service site using React + Tailwind.",
-      path: "/berglundweb",
+      path: "https://www.berglundweb.no", // external link
+      external: true,
+      thumbnail: BerglundwebImg
   },
   {
       title: "Tandanlaget.se",
-      description: "",
-      path: "/Tandanlaget",
+      description: "A site for a Swedish housing cooperative, built with React + Tailwind.",
+      path: "https://www.tandanlaget.se", // external link
+      external: true,
+      thumbnail: TandanlagetImg, // optional image preview
   },
   {
       title: "Tors Vei 11A Sameie",
       description: "",
       path: "/Sameie",
+      external: false,
   },
 ];
 
