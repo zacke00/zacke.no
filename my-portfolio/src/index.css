@@ -1,9 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 @import "tailwindcss";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 @theme {
-  --color-softGreen: #879a77;
-  --color-orangeSun: #E3725C;
+  --color-softBlue: #77A9EE;
+  --color-textColor: #235AC7;
+  --color-softPurple: #B8AEE0;
+  --color-mistGray: #F4F6F8;
+  --color-cloudWhite: #FFFFFF;
+  --color-shadowGray: #D9E0EC; 
+  --color-accentCoral: #FF8A7A; 
+}
+
+.julius-sans {
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.perspective {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
 }

@@ -1,0 +1,21 @@
+.home-section {
+    position: absolute;
+    inset: 0;
+    background-image: url("../../assets/Waves.svg");
+    top: 20%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    background-attachment: scroll;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  @media (max-width: 768px) {
+    .home-section {
+      background-image: url("../../assets/BackgroundPhone.svg");
+      background-repeat: repeat-x;
+      background-position: top;
+      background-size: auto; /* or contain */
+    }
+  }

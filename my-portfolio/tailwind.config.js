@@ -7,8 +7,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        softGreen: "#879a77",
-        orangeSun: "#E3725C",
+        softBlue: "#77A9EE",
+        textColor: "#235AC7",
+        softPurple: "#B8AEE0",
+        mistGray: "#F4F6F8", 
+        cloudWhite: "#FFFFFF", 
+        shadowGray: "#D9E0EC", 
+        accentCoral: "#FF8A7A", 
+      },
+      fontFamily: {
+        julius: ['"Julius Sans One"', 'sans-serif'],
       },
     },
   },
