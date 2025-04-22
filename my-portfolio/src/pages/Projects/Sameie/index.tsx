@@ -1,3 +1,9 @@
+import TVLogin from "../../../assets/TorsVei/TVLogin.png";
+import TVSignup from "../../../assets/TorsVei/TVSignup.png";
+import TVDashboard from "../../../assets/TorsVei/TVDashboard.png";
+import TVNewPost from "../../../assets/TorsVei/TVNewPost.png";
+import TVProfile from "../../../assets/TorsVei/TVProfile.png";
+
 const Sameie = () => {
   return (
     <div className="w-[90%] mx-auto mt-10 space-y-12">
@@ -76,10 +82,11 @@ const Sameie = () => {
       <div>
         <h2 className="text-2xl font-semibold mb-4 text-black dark:text-white">Screenshots</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-          <img src="/images/sameie-1.jpg" alt="Dashboard" className="rounded-lg shadow-md object-cover" />
-          <img src="/images/sameie-2.jpg" alt="Login" className="rounded-lg shadow-md object-cover" />
-          <img src="/images/sameie-3.jpg" alt="Documents page" className="rounded-lg shadow-md object-cover" />
-          <img src="/images/sameie-4.jpg" alt="Contact form" className="rounded-lg shadow-md object-cover" />
+          <img src={TVLogin} alt="Login" className="rounded-lg shadow-md object-cover" />
+          <img src={TVSignup} alt="Signup" className="rounded-lg shadow-md object-cover" />
+          <img src={TVDashboard} alt="Dashboard" className="rounded-lg shadow-md object-cover" />
+          <img src={TVNewPost} alt="New Post" className="rounded-lg shadow-md object-cover" />
+          <img src={TVProfile} alt="Edit Profile" className="rounded-lg shadow-md object-cover" />
         </div>
       </div>
     </div>
