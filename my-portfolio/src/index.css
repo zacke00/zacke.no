@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-softBlue: #77A9EE;
   --color-textColor: #235AC7;
@@ -8,7 +10,15 @@
   --color-mistGray: #F4F6F8;
   --color-cloudWhite: #FFFFFF;
   --color-shadowGray: #D9E0EC; 
-  --color-accentCoral: #FF8A7A; 
+  --color-softLavender: #C5B4E3;
+  --color-softBlack: #262626;
+  --color-darkSurface: #2e2e2e;
+  --color-darkOverlay: #303030;
+  --color-darkBorder: #3a3a3a;
+}
+.dark {
+  background-color: #262626;
+  transition: all 0.2s ease-in-out;
 }
 
 .julius-sans {
