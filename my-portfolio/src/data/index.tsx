@@ -25,6 +25,7 @@ import {
 import {  Project, SkillCategory } from "../types";
 import TandanlagetImg from "../assets/Tandanlaget.png";
 import BerglundwebImg from "../assets/Berglundweb.png";
+import Sameie from "../assets/Sameie.png";
 
 const skills: SkillCategory[] = [
     {
@@ -79,28 +80,36 @@ const skills: SkillCategory[] = [
   ];
 
 
-const projects: Project[] = [
-  {
+  const projects: Project[] = [
+    {
       title: "Berglund Web",
-      description: "Custom-built portfolio and service site using React + Tailwind.",
-      path: "https://www.berglundweb.no", // external link
+      description: "My official company website where I offer custom-built web solutions for clients. Designed with React and Tailwind, this site showcases my services, projects, and web design capabilities.",
+      path: "https://www.berglundweb.no",
       external: true,
-      thumbnail: BerglundwebImg
-  },
-  {
+      thumbnail: BerglundwebImg,
+    },
+    {
       title: "Tandanlaget.se",
-      description: "A site for a Swedish housing cooperative, built with React + Tailwind.",
-      path: "https://www.tandanlaget.se", // external link
+      description: "A clean and professional website built for a Swedish dental clinic. Focused on simplicity, clarity, and ease of navigation — created using React and Tailwind CSS.",
+      path: "https://www.tandanlaget.se",
       external: true,
-      thumbnail: TandanlagetImg, // optional image preview
-  },
-  {
+      thumbnail: TandanlagetImg,
+    },
+    {
       title: "Tors Vei 11A Sameie",
-      description: "",
+      description: "A cross-platform social app inspired by Facebook, made for the local housing community. Built with React Native and Firebase — supports posts, images, real-time updates, and secure user authentication.",
       path: "/Sameie",
       external: false,
-  },
-];
+      thumbnail: Sameie,
+    },
+    {
+      title: "CV",
+      description: "A dedicated page for my personal CV. Here, you can explore my skills, technical background, and previous experience — including leadership and creative work outside IT.",
+      path: "/CV", // You might want to change this path to /cv
+      external: false,
+    }
+  ];
+  
 
 
   export { skills, projects };

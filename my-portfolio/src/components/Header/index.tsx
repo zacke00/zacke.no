@@ -1,5 +1,5 @@
 import { Sparkles } from "lucide-react";
-import DarkModeToggle from "../DarkMode";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -12,13 +12,12 @@ const Header = () => {
       flex items-center justify-between 
       transition-all duration-300">
       
-      <div className="flex items-center gap-2">
-        <Sparkles size={20} className="text-[#235AC7]" />
-        <span className="text-lg font-semibold tracking-tight text-gray-800 dark:text-gray-100">
-          zacke´s Portfolio
-        </span>
-      </div>
-        
+      <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+  <Sparkles size={20} className="text-[#235AC7]" />
+  <span className="text-lg font-semibold tracking-tight text-gray-800 dark:text-gray-100">
+    zacke´s Portfolio
+  </span>
+</Link>
       <div className="text-sm text-gray-500 italic dark:text-gray-400">
         Focused on quality & clarity
       </div>

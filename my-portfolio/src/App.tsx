@@ -5,6 +5,7 @@ import { Route, Routes } from 'react-router-dom';
 import Sameie from './pages/Projects/Sameie';
 import Berglundweb from './pages/Projects/Berglundweb';
 import DarkModeToggle from './components/DarkMode';
+import CV from './pages/CV/Index';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Sameie" element={<Sameie />} />
         <Route path="/Berglundweb" element={<Berglundweb />} />
+        <Route path="/CV" element={<CV />} />
       </Routes>
       <Footer/>
     </div>

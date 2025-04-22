@@ -3,6 +3,15 @@ import TVSignup from "../../../assets/TorsVei/TVSignup.png";
 import TVDashboard from "../../../assets/TorsVei/TVDashboard.png";
 import TVNewPost from "../../../assets/TorsVei/TVNewPost.png";
 import TVProfile from "../../../assets/TorsVei/TVProfile.png";
+import YouTube from "react-youtube";
+
+const videoOptions = {
+  height: "500vh",
+  width: "100%",
+  playerVars: {
+    autoplay: 0,
+  },
+};
 
 const Sameie = () => {
   return (
@@ -16,15 +25,8 @@ const Sameie = () => {
       </div>
 
       {/* YouTube Video */}
-      <div className="aspect-w-16 aspect-h-9">
-        <iframe
-          src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-          title="Tors Vei 11A Sameie Demo"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          className="w-full h-full rounded-xl shadow-lg"
-        ></iframe>
-      </div>
+
+      <YouTube videoId="ayxlMmvfQOI" opts={videoOptions} className="rounded-xl shadow-lg" />
 
       {/* Documentation */}
       <h2 className="text-2xl font-semibold mb-4 text-black dark:text-white">Project Documentation</h2>

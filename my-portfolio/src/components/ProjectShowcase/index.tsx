@@ -4,7 +4,7 @@ import { projects } from "../../data";
 const ProjectShowcase = () => {
   return (
     <div className="w-[90%] mx-auto mt-20 p-4">
-      <h2 className="text-2xl font-bold mb-6 text-center text-textColor dark:text-softLavender transition-colors mt-0">
+      <h2 className="text-2xl font-bold mb-6 text-center text-textColor dark:text-textColor border-white transition-colors mt-0">
         Featured Projects
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
